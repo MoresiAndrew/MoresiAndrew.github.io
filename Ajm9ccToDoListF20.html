@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--
+Name: Andrew Moresi
+Pawprint: Ajm9cc
+Date: 10/1/2020
+Challenge: To-Do List F20
+-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Ajm9ccToDoListF20</title>
+        <link href="Ajm9ccToDoListF20.css" rel="stylesheet" type="text/css">
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
+        </script>
+        <script src="Ajm9ccToDoList.js"></script>
+    </head>
+    <body>
+        <a href="Ajm9ccProjectsF20.html">
+            <h1 id="navigate">Back to Projects</h1>
+        </a>
+        
+        <h2 id="header">To Do List</h2>
+        
+        <div id="toDoWrapper">
+            <table class="toDoTable">
+                <thead class="head">
+                    <tr id="headers">
+                        <th>Title</th>
+                        <th>Type</th>
+                        <th>Priority</th>
+                        <th>Date</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+                  <p id="alert">All fields must be filled out</p>
+        <div id="formWrapper">
+  
+            <form>
+                <h2 id="toDoTitle">Add a to do</h2>
+                <input id="title" type="text" name="title" placeholder="Title" value="">
+                <select id="type">
+                    <option value="" selected disabled hidden>Select Type</option>
+                    <option value="Homework">Homework</option>
+                    <option value="Project">Project</option>
+                    <option value="Test">Test</option>
+                </select>
+                <label for="priority">Priority</label>
+                <input id="priority" type="range" name="priority" min="0" max="5" value="0">
+                <span id="value">0</span>
+                <input id="date" type="date" name="date">
+                <span id="error"></span>
+                <br>
+                <button id="add" type="button">Add to List</button>
+                <button id="clear" type="button">Clear Form</button>
+            </form>
+        </div>
+        <button id="theme" type="button">Theme: Light</button>
+    </body>
+</html>

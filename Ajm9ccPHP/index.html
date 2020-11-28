@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+name: Andrew Moresi
+pawprint: Ajm9cc
+date: 11/2/2020
+challenge: PHP Fall 2020
+-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Ajm9ccPHPF20</title>
+        
+        <link href="Ajm9ccPHP.css" type="text/css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script src="Ajm9ccPHP.js"></script>
+    </head>
+    <body>
+        
+        <a href="../Ajm9ccProjectsF20.html">
+            <h1>Back to Projects</h1>
+        </a>
+        
+        <div id="formWrapper">
+            <h2 id="title">PHP Playground</h2>
+            <hr>
+            <select id="functions" name="functions">
+                    <option value="" selected hidden disabled>Select A Function</option>
+                    <option value="name">Name</option>
+                    <option value="hammingNumber">Hamming Number</option>
+                    <option value="passwordSim">Password Simultion</option>
+                    <option value="listCreator">List Creator</option>
+                    <option value="cylinderSurfaceArea">Cylinder Surface Area</option>
+                </select>
+            <form id="name" action="Ajm9ccPHP.php" method="GET" target="_blank">
+                <h1>Name Function:</h1>
+                <input type="text" id="firstName" name="firstName" placeholder="First Name">
+                <input type="text" id="lastName" name="lastName" placeholder="Last Name"><br>
+                <button class="submit" type="button">Submit</button>
+                <button class="clear" type="button">Clear</button>
+            </form>
+            
+            <form id="hammingNumber" action="Ajm9ccPHP.php" method="GET" target="_blank">
+                <h1>Hamming Number Function:</h1>
+                <input type="text" id="hamming" name="hamming" placeholder="Provide a Number"><br>
+                <button class="submit" type="button">Submit</button>
+                <button class="clear" type="button">Clear</button>
+            </form>
+            
+            <form id="passwordSim" action="Ajm9ccPHP.php" method="POST" target="_blank">
+                <h1>Password Simulation Function:</h1>
+                <input type="text" id="username" name="username" placeholder="Username">
+                <input type="password" id="password" name="password" placeholder="Password"><br>
+                <button class="submit" value="submit" type="button">Submit</button>
+                <button class="clear" type="button">Clear</button>
+            </form>
+            
+            <form id="listCreator" action="Ajm9ccPHP.php" method="GET" target="_blank">
+                <h1>List Creator Function:</h1>
+                <input type="text" id="firstList" name="firstList" maxlength="1" placeholder="First singular value">
+                <input type="text" id="secondList" name="secondList" maxlength="1" placeholder="Second singular value"><br>
+                <button class="submit" value="submit" type="button">Submit</button>
+                <button class="clear" type="button">Clear</button>
+            </form>
+            
+            <form id="cylinderSurfaceArea" action="Ajm9ccPHP.php" method="GET" target="_blank">
+                <h1>Cylinder Surface Area Function:</h1>
+                <input type="number" id="radius" name="radius" placeholder="Enter Radius">
+                <input type="number" id="height" name="height" placeholder="Enter Height"> <br>
+                <button class="submit" value="submit" type="button">Submit</button>
+                <button class="clear" type="button">Clear</button>
+            </form>
+        </div>
+    </body>
+</html>

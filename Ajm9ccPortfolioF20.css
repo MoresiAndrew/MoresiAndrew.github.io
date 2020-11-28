@@ -1,0 +1,90 @@
+#nav {
+    margin: auto;
+    padding: 5px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: silver;
+    z-index: 5;
+}
+            
+.navItems {
+    border-left: 10px solid darkblue;
+    padding-left: 20px;
+}
+            
+.name {
+    margin: 10px;
+    font-size: 30px;
+    font-family: fantasy;
+    color: darkblue;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+#portfolio {
+    text-decoration: underline;
+}
+            
+div.pic {
+    text-align: center;
+}
+#me {
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    width: 40%;
+    border: 2px solid black;
+    left: auto;
+    right: auto;
+    z-index: -5;
+    
+}
+h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+    color: silver;
+}
+.text {
+    text-align: center;
+    font-size: 40px;
+    color: silver;
+}
+body {
+    background-image: linear-gradient(-270deg, grey, darkblue);
+}
+#github {
+    width: 50px;
+}
+#linkedin {
+    width: 50px;
+}
+h2#text {
+    font-size: 40px;
+    margin-top: 2px;
+}
+
+.buttons {
+    float: left;
+    color: black;
+    border-radius: 5px;
+    border: 2px solid black;
+    filter: brightness(0%);
+    margin-left: 20px;
+}
+
+div.buttonWrapper {
+    margin: auto;
+    width: 350px;
+    height: 60px;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
