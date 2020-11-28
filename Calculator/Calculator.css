@@ -1,0 +1,102 @@
+html {
+    height: 100%;
+}
+
+a {
+    position: relative;
+    font-size: 40px;
+    text-decoration: none;
+    left: 40px;
+    top: 40px;
+}
+
+body {
+    background-image: linear-gradient( silver, skyblue);
+}
+
+#title{
+    position: relative;
+    margin: 5% auto;
+    text-align: center;
+}
+
+#calcWrapper {
+    position: relative;
+    width: 500px;
+    height: auto;
+    border: 2px solid black;
+    margin: auto;
+    top: 20px;
+    border-radius: 10px;
+    background-color: silver;
+}
+
+#outputWrapper {
+    position: relative;
+    margin: auto;
+    width: 430px;
+    min-height: 100px;
+    top: 20px;
+    border: 2px solid black;
+    background-color: chartreuse;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+#output {
+    position: relative;
+    top: 20%;
+    font-family: digital;
+    font-size: 60px;
+    overflow: hidden;
+}
+
+#prevOutput {
+    position: relative;
+    font-family: digital;
+    font-size: 40px;
+}
+
+#buttonWrapper {
+    position: relative;
+    margin: auto;
+    width: 480px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.nums, .equate {
+    display: inline-block;
+    border: 2px solid black;
+    padding: 15px;
+    margin: 5px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.equate {
+    background-color: slateblue;
+}
+
+.nums {
+    background-color: aqua;
+}
+
+#equal {
+    background-color: lawngreen;
+}
+
+#delete, #clear{
+    background-color: red;
+}
+
+@font-face {
+    font-family: digital;
+    src: url(digital-7.ttf);
+}
