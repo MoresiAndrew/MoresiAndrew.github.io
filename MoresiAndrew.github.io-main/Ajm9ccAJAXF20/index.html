@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--
+name: Andrew Moresi 
+pawprint: Ajm9cc
+date: 11/11/2020
+challenge: AJAX Fall 2020
+-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Ajm9cAJAXF20</title>
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="Ajm9ccAJAX.css" type="text/css">
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script src="Ajm9ccAJAX.js"></script>
+        
+    </head>
+    <body>
+        
+        <a href="../Ajm9ccProjectsF20.html">
+            <h1>Back to Projects</h1>
+        </a>
+        
+        <div id="titleWrapper">
+            <img id="logo" src="nasa-logo.jpg" alt="nasa logo">
+            <h1 id="title">Mars Explorer</h1>
+            <img id="mars" src="mars.jpg" alt="mars">
+        </div>
+        <div id="mainWrapper" class="clearfix">
+            
+            <div id="controlsWrapper">
+                <form  method="get">
+                    <label for="rovers">Rovers:</label>
+                    <br>
+                    <select id="rovers" name="rovers">
+                        <option value="curiosity">Curiosity</option>
+                        <option value="opportunity">Opportunity</option>
+                        <option value="spirit">Spirit</option>
+                    </select>
+                    <br>
+                    <label for="sol">Martian Sol:</label>
+                    <br>
+                    <input type="number" id="sol" name="sol">
+                    <br>
+                    <label for="camera">Camera:</label>
+                    <br>
+                    <select name="camera" id="camera">
+                    </select>
+                    <br>
+                    <button type="button" id="query" name="query">Query API</button>
+                </form>
+            </div>
+            <div id="photoWrapper">
+                <div id="count"></div>
+                <a id="prev">&#10094;</a>
+                <a id="next">&#10095;</a>
+                <div id="loader">
+                </div>
+            </div>
+            <div id="dataWrapper">
+                <h1 id="roverTitle">Rover</h1>
+                <p id="roverData"></p>
+            </div>
+        </div>
+    </body>
+</html>

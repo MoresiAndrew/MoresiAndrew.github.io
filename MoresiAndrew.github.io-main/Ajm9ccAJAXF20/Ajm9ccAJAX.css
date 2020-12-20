@@ -1,0 +1,159 @@
+body {
+    background-image: radial-gradient(#ff8c00, #800000);
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#mainWrapper{
+    position: relative;
+    width: 90%;
+    margin: auto;
+}
+
+#titleWrapper {
+    position: relative;
+    margin: 3% auto;
+    width: 50%;
+    height: 100px;
+    display: block;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Goldman', cursive;
+}
+
+#title {
+    display: inline-block;
+    vertical-align: middle;
+    
+}
+
+#logo {
+    position: absolute;
+    display: inline-block;
+    width: 200px;
+    vertical-align: middle;
+    left: 5%;
+}
+
+
+#mars {
+    position: absolute;
+    display: inline-block;
+    width: 100px;
+    vertical-align: middle;
+    right: 5%;
+}
+
+label {
+    font-family: 'Goldman', cursive;
+}
+
+#controlsWrapper {
+    position: relative;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: orange;
+    max-width:  15%;
+    min-width: 15%;
+    padding: 10px;
+    height: 500px;
+    float: left;
+    display: inline-block;
+}
+
+#sol {
+    position: relative;
+    width: 90%;
+}
+
+#photoWrapper {
+    position: relative;
+    min-width: 60%;
+    max-width: 60%;
+    padding: 10px;
+    height: 500px;
+    margin: auto;
+    float: left;
+    display: inline-block;
+}
+
+#dataWrapper {
+    position: relative;
+    min-width: 20%;
+    max-width: 20%;
+    background-color: darkgrey;
+    border: 2px solid black;
+    padding: 10px;
+    min-height: 500px;
+    margin: auto;
+    float: left;
+    display: inline-block;
+    text-align: center;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+#count {
+    position: relative;
+    display: none;
+    left: 10%;
+    right 10%;
+}
+
+#prev, #next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+}
+
+h1 {
+    font-family: 'Goldman', cursive;
+}
+p {
+    font-family: 'Goldman', cursive;
+}
+
+#next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+#prev:hover, #next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#loader {
+    display: none;
+    position: relative;
+    margin: auto;
+    width: 70px;
+    height: 70px;
+    left: 45%;
+    top: 40%;
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid black;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin{
+    0%{transform: rotate(0deg); }
+    100%{ transform: rotate(360deg);}
+}

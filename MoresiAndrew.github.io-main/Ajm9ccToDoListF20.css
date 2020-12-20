@@ -1,0 +1,120 @@
+body {
+    background-color: lightblue;
+}
+
+#navigate {
+    color: black;
+    text-decoration: none;
+    width: 300px;
+}
+
+#header {
+    text-align: center;
+}
+
+#toDoWrapper {
+    margin: auto;
+    width: 75%;
+    border: 2px solid black;
+    height: 400px;
+    margin-bottom: 50px;
+    background-color: grey;
+    overflow-y: auto;
+}
+
+#formWrapper {
+    margin: auto;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 40%;
+    
+    background-color: white;
+}
+
+#toDoTitle {
+    text-align: center;
+    font-size: 15px;
+    color: grey;
+}
+
+#title {
+    flex: 25%;
+    margin: 15px;
+}
+
+#type {
+    flex: 25%;
+    margin: 15px;
+}
+
+#priority{
+    flex: 25%;  
+}
+
+#date {
+    flex: 25%;
+    margin: 15px;
+}
+
+#add {
+    flex: 50%;
+    color: black;
+    background-color: #00e600;
+    width: 200px;
+    margin-left: 40%;
+}
+
+#clear {
+    flex: 50%;
+    color: red;
+    border: 2px solid red;
+    background-color: none;
+    width: 200px;
+}
+
+table.toDoTable {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table tr#headers {
+    width: 75px;
+    color: white;
+}
+
+.toDoTable th:nth-child(n) {
+    border-bottom: 2px solid black
+}
+
+#alert {
+    margin: auto;
+    text-align: center;
+    color: red;
+    margin-bottom: 20px;
+}
+
+
+td, th {
+    text-align: center;
+    padding: 5px;
+}
+
+#theme {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.action {
+    width: 30px;
+}
+
+.stars {
+    width: 40px;
+}

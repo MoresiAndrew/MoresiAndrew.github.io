@@ -1,0 +1,92 @@
+#nav {
+    margin: auto;
+    padding: 5px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: silver;
+    z-index: 5;
+}
+            
+.navItems {
+    border-left: 10px solid darkblue;
+    padding-left: 20px;
+}
+            
+.name {
+    margin: 10px;
+    font-size: 30px;
+    font-family: fantasy;
+    color: darkblue;
+
+}
+
+#projects {
+    text-decoration: underline;
+}
+            
+a {
+    text-decoration: none;
+}
+
+#cardContainer {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    width: 90%;
+    position: relative;
+    margin: auto;
+    margin-top: 60px;
+    
+}
+
+.cards {
+    border: 5px solid blue;
+    border-radius: 5px;
+    width: 400px;
+    height: 250px;
+    background-color: aqua;
+    position: relative;
+    margin: 5% auto 5% auto;
+    box-shadow: 10px 10px aqua;
+}
+
+.cardImage{
+    width: 40%;
+    height: 100%;
+    border-right: 2px dotted slateblue;
+    display: inline-block;
+    float: left;
+}
+
+.cardItems {
+    float: left;
+    display: inline-block;
+    width: 59%;
+    font-family: 'Courier Prime', monospace;
+}
+
+.title {
+    text-align: center;
+    margin: 10px auto 10px auto;
+    font-size: 22px;
+}
+
+.link {
+    text-align: center;
+    font-size: 22px;
+    text-decoration: underline;
+    font-weight: bold;
+    color: slateblue;
+}
+
+.description {
+    font-size: 20px;
+    text-align: center;
+}
+
+.cear::after {
+    content: "";
+    clear: both;
+    display: table;
+}

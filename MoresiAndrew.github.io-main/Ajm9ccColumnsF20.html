@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--
+    Name: Andrew Moresi
+    Pawprint: Ajm9cc
+    Date: 9/8/2020
+    Challenge: Multi-Column Layout F20
+-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Ajm9ccColumnsF20</title>
+        <link href="Ajm9ccColumnsF20.css" rel="stylesheet" type="text/css">
+        <link href="nav.html" rel="import">
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
+        </script>
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <div id="nav">
+        </div>
+      
+
+        <!-- Main wrapper. This div should wrap all columns, row wrapper, and title header -->
+        <div id="mainWrapper" class="clear">
+
+            <h1 id="header">Skills</h1>
+            <!-- Left Column -->
+            <!-- Put left column physical width calculations here: 
+                    247px -> content width
+                +    36px -> Padding (18px left, 18px right)
+                +    14px -> Border (7px left, 7px right)
+                +    36px -> Margins (18px left, 18px right)
+            ==================
+                    333px
+            -->
+            
+            <div class="columns" id="leftColumn">
+                <h2>Languages</h2>
+                <ul>
+                    <li>C</li>
+                    <li>C#</li>
+                    <li>C++</li>
+                    <li>HTML, CSS</li>
+                    <li>Java</li>
+                    <li>Javascript</li>
+                    <li>PHP</li>
+                </ul>
+            </div>
+            
+            <!-- Row Wrapper. This div will contain two rows -->
+
+            <!--Put middle column physical width calculations here:
+                    375px -> Content width top
+                +    50px -> Padding (25px left, 25px right)
+                +    14px -> Border (7px left, 7px right)
+                +    10px -> Margin (5px left, 5px right)
+            ================
+                    449px
+                +    36px -> Margin wrapper (18px left, 18px right)
+            ================
+                    485
+
+            -->
+            <div id="rowWrapper">
+                <div class="rows" id="topRow">
+                    <h2>Coursework</h2>
+                    <ul>
+                        <li>Algorithm Design and Programming II</li>
+                        <li>Intro to Logic Systems</li>
+                        <li>Web Application Development</li>
+                    </ul>
+                </div>
+                
+                <div class="rows" id="bottomRow">
+                    <h2>Other</h2>
+                    <p>Driven problem solver that is constantly learning and finding new ways to improve.</p>
+                </div>
+            </div>
+            
+            <!-- Right Column -->
+            <!--Put right column physical width calculations here: 
+                    224px -> content width
+                +    36px -> Padding (18px left, 18px right)
+                +    14px -> Border (7px left, 7px right)
+                +    36px -> Margins (18px left, 18px right)
+            ==================
+                    310px
+
+            -->
+            <div class="columns" id="rightColumn">
+                <h2>Technologies</h2>
+                <ul>
+                    <li>Unity</li>
+                    <li>Visual Studio</li>
+                    <li>Brackets</li>
+                    <li>Git</li>
+                    <li>JQuery</li>
+                </ul>
+            </div>
+        </div>
+        <h4>Last updated at: 2:10PM 10/26/2020</h4>
+    </body>
+</html>
